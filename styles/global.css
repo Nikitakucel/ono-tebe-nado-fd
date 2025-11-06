@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 1100px;
-  margin: 0 auto;
-  font-family: Raleway, sans-serif;
+html {
+  /* Фиксируем скролл для модальных окон */
+  scroll-behavior: smooth;
 }
 
+body {
+  /* Задаем максимальную ширину как в макете */
+  max-width: 1100px;
+  /* Центрируем контент */
+  margin: 0 auto;
+  /* Основной шрифт */
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  /* Цвет текста по умолчанию */
+  color: #000;
+}
+
+/* Сброс отступов */
 h1,
 h2,
 h3,
@@ -25,14 +38,146 @@ blockquote {
   padding: 0;
 }
 
+/* Сброс стилей списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Сброс стилей ссылок */
 a {
   color: inherit;
+  text-decoration: none;
 }
 
-img {
-  width: 100%;
-}
-
+/* Сброс стилей кнопок */
 button {
   font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Сброс стилей изображений */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Стили для выделения текста */
+::selection {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+/* Убираем стандартное подчеркивание у ссылок, но оставляем возможность кастомного */
+a {
+  text-decoration: none;
+}
+
+/* Сброс стилей для address */
+address {
+  font-style: normal;
+}
+
+/* Сброс стилей для fieldset и legend */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Сброс стилей для текстовых полей */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Убираем стандартные стили для details/summary */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Вспомогательные классы для скрытия элементов */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Базовые стили для фокуса для доступности */
+:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Сброс стилей для iframe */
+iframe {
+  border: none;
+}
+
+/* Сброс стилей для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Сброс стилей для горизонтальной линии */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  margin: 0;
+}
+
+/* Сброс стилей для цитат */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* Дополнительные глобальные стили для проекта */
+
+/* Базовые стили для основных секций */
+main {
+  display: block;
+}
+
+/* Базовые стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Базовые стили для параграфов */
+p {
+  line-height: 1.4;
+}
+
+/* Контейнер для ограничения максимальной ширины */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
