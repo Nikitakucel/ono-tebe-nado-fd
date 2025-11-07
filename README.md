@@ -1,3 +1,5 @@
+https://github.com/Nikitakucel/ono-tebe-nado-fd
+
 ## ono-tebe-nado
 
 Мой первый учебный проект по работе с Git и GitHub.
