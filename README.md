@@ -1,4 +1,4 @@
-# First Project
+## ono-tebe-nado
 
 Мой первый учебный проект по работе с Git и GitHub.
 
