@@ -178,9 +178,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
-    width: auto;
-    height: 100%;
-    padding: 50px 40px;
+    min-height: 596px;
+    padding: 48px 40px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -214,7 +213,7 @@
     z-index: 1;
     color: #fff;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.21;
 }
 
 .lots__look-more-link {
