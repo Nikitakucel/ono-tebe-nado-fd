@@ -242,12 +242,11 @@
 }
 
 .about__logo {
-    margin: 35px 72px 320px 47px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 240px;
-    min-height: 240px;
+    height: 240px;
     background-color: #000;
     border-radius: 50%;
 }
@@ -266,7 +265,6 @@
 .about__text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 25px;
 }
 
@@ -286,6 +284,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    width: 265px;
     font-size: 18px;
     line-height: 24.3px;
     text-underline-offset: 3px;
@@ -294,7 +293,6 @@
 
 .footer__menu {
     justify-self: center;
-    gap: 0;
     font-size: 18px;
     line-height: 24.3px;
     text-underline-offset: 3px;
@@ -311,11 +309,11 @@
 }
 
 .footer__menu-link_active {
-    display: flex;
+    text-decoration: none;
 }
 
 .footer__menu-list-item {
-    text-decoration: none;
+    display: flex;
 }
 
 .footer__menu-link {
