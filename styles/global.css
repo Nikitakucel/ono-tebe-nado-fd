@@ -12,15 +12,15 @@ body {
 }
 
 h1,
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-p, 
-ul, 
-ol, 
-li, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
 blockquote {
   margin: 0;
   padding: 0;
@@ -32,19 +32,13 @@ ul, ol {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
-  cursor: pointer;
+}
+
+.image {
+  width: 100%;
 }
 
 address {
   font-style: normal;
-}
-
-button {
-  border: none;
-  padding: 0;
-  background: transparent;
-  font: inherit;
-  cursor: pointer;
 }
