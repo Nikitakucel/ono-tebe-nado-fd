@@ -12,23 +12,28 @@
 .header__links-list {
     display: flex;
     gap: 33px;
+    list-style: none;
 }
 
 .header__links-list-item:first-child {
-    text-transform: lowercase;
     list-style: none;
-    text-decoration: none;
 }
 
 .header__links-list-item {
     list-style: circle;
-    text-decoration: underline;
     text-underline-offset: 3px;
 }
 
 .header__link {
     line-height: 24px;
     font-size: 18px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-transform: lowercase;
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__logo {
@@ -140,6 +145,7 @@
     font-size: 22px;
     text-transform: uppercase;
     padding: 12px 32px;
+    font-family: inherit;
 }
 
 .lots {
@@ -156,12 +162,12 @@
 
 .lots__card-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     list-style: none;
 }
 
-.lost__card-list-item {
+.lots__card-list-item {
     height: 100%;
 }
 
@@ -268,6 +274,7 @@
     gap: 24px;
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: 0.001em;
 }
 
 .footer {
@@ -290,13 +297,13 @@
     font-size: 18px;
     line-height: 24px;
     text-underline-offset: 4px;
-    padding-left: 1px 154px 82px;
+    padding: 0;
 }
 
 .footer__menu {
     justify-self: center;
     font-size: 18px;
-    line-height: 24.%;
+    line-height: 1.2;
     text-underline-offset: 3px;
 }
 
@@ -308,14 +315,13 @@
     text-align: center;
 }
 
-.footer__menu-list-item:first-child {
-    display: flex;
-    text-decoration: none;
-}
-
 .footer__menu-link {
     text-decoration: underline;
     color: #000;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
 }
 
 .footer__social-list {
