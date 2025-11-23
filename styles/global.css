@@ -43,3 +43,11 @@ a {
 address {
   font-style: normal;
 }
+
+button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
